@@ -1,5 +1,5 @@
 {
-  "name": "zemtime-header",
+  "name": "ia-comp-header",
   "version": "1.1.13",
   "description": "Zemtime Header Component",
   "main": "dist/index.js",
