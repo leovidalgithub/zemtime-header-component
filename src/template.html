@@ -1,0 +1,27 @@
+<header class="zh-header">
+    <div class="zh-header-content">
+
+			<!-- SECTION TITLE -->
+            <div class="zh-section-data">
+
+				<!-- Title -->
+                <h3 ng-class="sectionData.titleClass">{{ sectionData.title | i18next }}</h3>
+
+				<!-- Notifications -->
+				<h4 ng-show="{{ sectionData.notificationShow }}" ng-class="sectionData.notificationCondition > 0 ? 'clr-red fw-600' : 'clr-grey-60'">({{ sectionData.notificationResult }})</h4>
+
+				<!-- section subtitle -->
+				<span ng-show="sectionData.spanShow">/ {{ sectionData.span }}</span>
+
+            </div>
+
+			<!-- BUTTONS & NOTIFICATIONS -->
+			<div class="zh-actions" ng-show="{{ actions.showActions }}">
+				<div>
+					<button ng-repeat="button in buttons" ng-disabled="{{ button.disabled }}" ng-click="button.click()" ng-hide="{{ button.hide }}" title="{{ button.title }}" ng-class="button.class">{{ button.text | i18next}}</button>
+				</div>
+			</div>
+
+
+    </div>
+</header>
