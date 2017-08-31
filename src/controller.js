@@ -1,7 +1,7 @@
 (function () {
   'use strict';
 
-  require('./sass/zh-header.scss')
+  require('./sass/comp-header.scss')
 
   var templateFile = require('./template.html')
 

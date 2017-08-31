@@ -32,22 +32,22 @@
 
 // FONT EXTENDS
 // ************
-	%zh-fw-light{
+	%comp-hd-fw-light{
 		font-weight: 300;
 	}
-	%zh-fw-regular{
+	%comp-hd-fw-regular{
 		font-weight: normal;
 	}
-	%zh-fw-bold{
+	%comp-hd-fw-bold{
 		font-weight: bold;
 	}
 
 // FONT CLASSES
 // ************
 	// FONT WEIGHT
-		.zh-fw-lig{font-weight: 300}
-		.zh-fw-reg{font-weight: normal}
-		.zh-fw-bol{font-weight: bold}
+		.comp-hd-fw-lig{font-weight: 300}
+		.comp-hd-fw-reg{font-weight: normal}
+		.comp-hd-fw-bol{font-weight: bold}
 
 	// COLORS
 		.clr-red{color: $col-red}
@@ -59,10 +59,10 @@
 
 // FONTS STYLES
 // ************
-	.zh-header{
+	.comp-hd-header{
 		h3{
 			font-size: 1.3rem !important;
-			@extend %zh-fw-bold;
+			@extend %comp-hd-fw-bold;
 			letter-spacing: .01em !important;
 			font-family: 'Roboto', sans-serif;
 			display: inline;

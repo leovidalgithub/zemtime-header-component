@@ -37,13 +37,13 @@
 
 // GENERAL CLASES
 // *************
-	%zh-flex-between {
+	%comp-hd-flex-between {
 		display: flex;
 		flex-flow: row wrap;
 		justify-content: space-between;
 		align-items: center;
 	}
-	%zh-flex-center {
+	%comp-hd-flex-center {
 		display: flex;
 		flex-flow: row wrap;
 		justify-content: center;
@@ -53,7 +53,7 @@
 
 // HEADER STYLES
 // *************
-	.zh-header{
+	.comp-hd-header{
 		position: absolute;
         top: 0;
         left: 0;
@@ -65,6 +65,7 @@
         background-color: $col-smookeWhite;
 		// margin-left: 60px;
 		color: $col-black;
+		border-bottom: 2px solid #ededed;
 
 		// Flex
 		display: flex;
@@ -78,7 +79,7 @@
 	        padding: 0px 15px 0 20px;
 		}
 
-        .zh-header-content {
+        .comp-hd-header-content {
         	width: 95%;
 			max-width: 1240px;
 			height: 100%;
@@ -94,7 +95,7 @@
 				flex-flow: row wrap;
 				justify-content: space-between;
 			}
-			.zh-section-data{
+			.comp-hd-section-data{
 				@media #{$portrait} and #{$d-lg-phone}{
 					margin-bottom: 0px;
 					text-align: center;
@@ -129,9 +130,9 @@
 					margin-right: 5px;
 				}
 			}
-			.zh-actions{
+			.comp-hd-actions{
 				// Flex
-				@extend %zh-flex-between;
+				@extend %comp-hd-flex-between;
 			}
 
         }
