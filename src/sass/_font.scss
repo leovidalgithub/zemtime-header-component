@@ -99,6 +99,8 @@
 			}
 			@media #{$portrait} and #{$phone}{
 				display: inline;
+				margin-top: 10px;
+				margin-bottom: 0;
 			}
 
 			&:before{

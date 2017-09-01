@@ -114,7 +114,6 @@
 
 				// Section subtitle
 				span{
-					// display: none;
 					@media #{$portrait} and #{$d-tablet}{
 						display: none;
 					}
