@@ -4,10 +4,10 @@
 
 // IMPORTS
 // *******
-	@import "variables";
-	@import "icons";
-	@import "font";
-	@import "buttons";
+	@import 'variables';
+	@import 'icons';
+	@import 'font';
+	@import 'buttons';
 
 
 // BASIC RESET
@@ -23,10 +23,6 @@
 		line-height: normal;
 		height: 100%;
 		font-size: 14px;
-
-		&.blockView {
-			overflow: hidden;
-		}
 	}
 	ul{
 		list-style: none;
@@ -62,7 +58,7 @@
 		height: auto;
 		padding: 6px;
 		min-height: 50px;
-        background-color: $col-smookeWhite;
+        background-color: $col-smoke-white;
 		// margin-left: 60px;
 		color: $col-black;
 		border-bottom: 2px solid #ededed;
@@ -76,7 +72,7 @@
 		@media #{$tablet}{
 			// margin-left: 230px;
 			height: 55px;
-	        padding: 0px 15px 0 20px;
+	        padding: 0 15px 0 20px;
 		}
 
         .comp-hd-header-content {
@@ -97,7 +93,7 @@
 			}
 			.comp-hd-section-data{
 				@media #{$portrait} and #{$d-lg-phone}{
-					margin-bottom: 0px;
+					margin-bottom: 0;
 					text-align: center;
 					// Flex
 					display: flex;
