@@ -1,6 +1,5 @@
 import * as webpack from 'webpack'
 import * as path from 'path'
-import * as fs from 'fs'
 import * as angularExternals from 'webpack-angular-externals'
 import * as rxjsExternals from 'webpack-rxjs-externals'
 
@@ -22,7 +21,7 @@ export default {
     angularExternals(),
     rxjsExternals()
   ],
-  devtool: 'source-map',
+  devtool: 'eval-source-map',
   module: {
     rules: [{
       test: /\.ts$/,
