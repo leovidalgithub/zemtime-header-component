@@ -1,0 +1,33 @@
+<header class="comp-hd-header">
+  <div class="comp-hd-header-content">
+
+    <!-- SECTION TITLE -->
+    <div class="comp-hd-section-data">
+
+      <!-- Title -->
+      <h3 [ngClass]="compHeaderSectionData.titleClass">{{ compHeaderSectionData.title}}</h3>
+      <!-- Notifications -->
+      <h4 *ngIf="compHeaderSectionData.notificationShow" [ngClass]="compHeaderSectionData.notificationCondition > 0 ? 'clr-red fw-600' : 'clr-grey-60'">({{ compHeaderSectionData.notificationResult }})</h4>
+
+      <!--&lt;!&ndash; Section subtitle &ndash;&gt;-->
+      <span *ngIf="compHeaderSectionData.spanShow">/ {{ compHeaderSectionData.span }}</span>
+
+    </div>
+
+    <!-- BUTTONS & NOTIFICATIONS -->
+    <div class="comp-hd-actions" *ngIf="compHeaderActionsShow.showActions">
+      <div>
+        <ng-container *ngFor="let button of compHeaderButtonsActions" >
+          <button [ngClass]="button.buttonClass" *ngIf="button.show" (click)="button.clickAction()">
+            {{ button.text }}
+          </button>
+        </ng-container>
+      </div>
+    </div>
+
+  </div>
+</header>
+
+
+<!--{{compHeaderSectionData.title}}-->
+

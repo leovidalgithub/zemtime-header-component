@@ -1,0 +1,112 @@
+// *************************************************** //
+	// FONT ROBOTO 300-400-700 FROM GOOGLE FONTS
+// *************************************************** //
+
+	@font-face {
+		font-family: 'Roboto';
+		src: url('fonts/Roboto-Light.eot');
+		src: url('fonts/Roboto-Light.eot?#iefix') format('embedded-opentype'),
+		url('fonts/Roboto-Light.woff') format('woff'),
+		url('fonts/Roboto-Light.ttf') format('truetype');
+		font-weight: 300;
+		font-style: normal;
+	}
+	@font-face {
+		font-family: 'Roboto';
+		src: url('fonts/Roboto-Regular.eot');
+		src: url('fonts/Roboto-Regular.eot?#iefix') format('embedded-opentype'),
+		url('fonts/Roboto-Regular.woff') format('woff'),
+		url('fonts/Roboto-Regular.ttf') format('truetype');
+		font-weight: normal;
+		font-style: normal;
+	}
+	@font-face {
+		font-family: 'Roboto';
+		src: url('fonts/Roboto-Bold.eot');
+		src: url('fonts/Roboto-Bold.eot?#iefix') format('embedded-opentype'),
+			url('fonts/Roboto-Bold.woff') format('woff'),
+			url('fonts/Roboto-Bold.ttf') format('truetype');
+		font-weight: bold;
+		font-style: normal;
+	}
+
+// FONT EXTENDS
+// ************
+	%comp-hd-fw-light{
+		font-weight: 300;
+	}
+	%comp-hd-fw-regular{
+		font-weight: normal;
+	}
+	%comp-hd-fw-bold{
+		font-weight: bold;
+	}
+
+// FONT CLASSES
+// ************
+	// FONT WEIGHT
+		.comp-hd-fw-lig{font-weight: 300}
+		.comp-hd-fw-reg{font-weight: normal}
+		.comp-hd-fw-bol{font-weight: bold}
+
+	// COLORS
+		.clr-red{color: $col-red}
+		.clr-green{color: $col-green}
+		.clr-blue{color: $col-blue}
+		.clr-grey-20{color: $col-grey-20}
+		.clr-grey-40{color: $col-grey-40}
+		.clr-grey-60{color: $col-grey-60}
+
+// FONTS STYLES
+// ************
+	.comp-hd-header{
+		h3{
+			font-size: 1.2rem !important;
+			@extend %comp-hd-fw-regular;
+			letter-spacing: .02em !important;
+			font-family: 'Roboto', sans-serif;
+			display: inline;
+			margin: 0;
+
+			// @media #{}
+			@media #{$tablet}{
+				font-size: 1.5rem !important;
+				margin-right: 6px;
+				letter-spacing: .01rem;
+			}
+
+			// Section icon
+			&:before{
+				font-size: .8em !important;
+				margin-right: 3px;
+        //padding-bottom: 5px;
+				@media #{$phone}{
+					margin-right: 8px;
+				}
+
+			}
+
+		}
+		h4{
+			@media #{$portrait} and #{$d-phone}{
+				display: none;
+			}
+			@media #{$landscape} and #{$sm-phone}{
+				font-size: 1.2rem;
+				font-weight: normal;
+				letter-spacing: .01rem;
+				font-family: 'Roboto', sans-serif;
+				display: inline;
+			}
+			@media #{$portrait} and #{$phone}{
+				display: inline;
+				margin-top: 10px;
+				margin-bottom: 0;
+			}
+
+			&:before{
+				// margin-right: 3px;
+				font-size: .9em;
+			}
+		}
+	}
