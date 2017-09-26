@@ -88,8 +88,6 @@
 
 		}
 		h4{
-			font-family: 'Roboto', sans-serif;
-
 			@media #{$portrait} and #{$d-phone}{
 				display: none;
 			}
