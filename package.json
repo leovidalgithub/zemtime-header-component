@@ -1,10 +1,8 @@
 {
   "name": "ia-comp-header",
-  "version": "2.0.0",
+  "version": "2.1.0",
   "description": "Zemtime Header Component",
-  "main": "./dist/index.umd.js",
-  "module": "./dist/index.js",
-  "typings": "./dist/index.d.ts",
+  "main": "dist/index.umd.js",
   "scripts": {
     "build": "rimraf dist && webpack --bail --progress --profile --config webpack.config.ts",
     "test": "echo \"Error: no test specified\" && exit 1"
