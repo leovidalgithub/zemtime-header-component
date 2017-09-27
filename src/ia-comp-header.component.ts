@@ -17,30 +17,3 @@ export class IaCompHeaderComponentLight implements OnInit {
   }
 
 }
-
-
-// ---------------------------------------------------------------------------    HEADER DATA
-      // $scope.sectionData = {
-      //   title:                 '',
-      //   titleClass:            '',
-      //   notificationShow:      false,
-      //   notificationCondition: '',
-      //   notificationResult:    '',
-      //   span:                  '',
-      //   spanShow:              false
-      // };
-      //
-      // $scope.actions = {
-      //   showActions: false
-      // }
-      //
-      // $scope.buttons = [{
-      //   text:  '',
-      //   class: '',
-      //   title: false,
-      //   hide:  false,
-      //   click: function(),
-      //   clickParameters: '',
-      //   disabled: false
-      // }];
-// ---------------------------------------------------------------------------

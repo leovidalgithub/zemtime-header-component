@@ -79,7 +79,7 @@
 			&:before{
 				font-size: .8em !important;
 				margin-right: 3px;
-        //padding-bottom: 5px;
+
 				@media #{$phone}{
 					margin-right: 8px;
 				}
@@ -88,6 +88,8 @@
 
 		}
 		h4{
+			font-family: 'Roboto', sans-serif;
+
 			@media #{$portrait} and #{$d-phone}{
 				display: none;
 			}
@@ -100,6 +102,10 @@
 			}
 			@media #{$portrait} and #{$phone}{
 				display: inline;
+				font-size: 1.2rem;
+				font-weight: normal;
+				letter-spacing: .01rem;
+				font-family: 'Roboto', sans-serif;
 				margin-top: 10px;
 				margin-bottom: 0;
 			}

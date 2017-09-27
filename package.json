@@ -1,6 +1,6 @@
 {
   "name": "ia-comp-header",
-  "version": "2.1.5",
+  "version": "2.1.7",
   "description": "Zemtime Header Component",
   "main": "dist/index.umd.js",
   "scripts": {
